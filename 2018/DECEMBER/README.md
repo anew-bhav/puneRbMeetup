@@ -2,21 +2,19 @@
 
 ## Rake - An Overview
 
-##                 Rake 
-                  /   \
-               Ruby   Make
+###                  Rake 
+###                  /   \
+###               Ruby   Make
 
 Rake is build language with **purpose** similar to Ant and Make. 
 
-**Purpose**
-______
+### Purpose
 
 * was developed to manage the build process of software projects.
 * the convinience and flexibility which ruby provides, rake has now become a primary 
   methods for automation of various task in ruby projects.
 
-**Why Rake?**
-______
+### Why Rake?
 
 __Rake is declarative__
 * The expected results are specified. It carries out the associated and their dependent tasks
@@ -28,7 +26,7 @@ __Rake is declarative__
 > It automaically check for the specified item in directory.
 > It wont run if upto date copies exists.
 
-**Working with Rake**
+###  Working with Rake
 All tasks to be run are described inside a file named ```Rakefile``` which is generally located in 
 the application root.
 ```Rakefile``` is nothing but a ruby program written in a partivular format.
@@ -41,8 +39,3 @@ task :sample do
 end
 
 ```
-
-
-
-
-
