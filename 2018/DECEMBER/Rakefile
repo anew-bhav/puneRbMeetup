@@ -1,0 +1,21 @@
+desc "dummy task"
+task :dummy do
+    puts "Hello! I'm a dummy task"
+end
+
+desc "say hello"
+task :first_task do
+    puts "Hello from first_task"
+end
+
+desc "task with a prerequisite"
+task :second_task => :first_task do
+    puts "Hello from second_task"
+end
+
+desc "task with multiple prerequisites" 
+task :third_task => [ :dummy, :first_task ] do
+    puts "Hello from third_task"
+end
+
+task default: %i[second_task third_task]
