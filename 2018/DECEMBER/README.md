@@ -2,9 +2,11 @@
 
 ## Rake - An Overview
 
-###                  Rake 
-###                  /   \
-###               Ruby   Make
+```
+                  Rake 
+                  /   \
+               Ruby   Make
+```
 
 Rake is build language with **purpose** similar to Ant and Make. 
 
